@@ -1,0 +1,38 @@
+.card.slide-in {
+    transform: translateX(-100%);
+    animation: slide-in 0.5s ease-in-out forwards;
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+/* .floating-image sınıfı için stil */
+.floating-image {
+    animation: float 2s ease-in-out infinite;
+    /* Sonsuz döngüde kayan animasyon */
+}
+
+@keyframes float {
+    0% {
+        transform: translateX(0);
+        /* Başlangıç konumu: hareketsiz */
+    }
+
+    50% {
+        transform: translateX(3px);
+        /* Orta konum: sağa 3px kayma */
+    }
+
+    100% {
+        transform: translateX(0);
+        /* Bitiş konumu: başlangıç konumu */
+    }
+}
